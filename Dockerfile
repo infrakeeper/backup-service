@@ -1,5 +1,5 @@
 # BUILD CONTAINER
-FROM golang:alpine AS builder
+FROM quay.io/bitnami/golang:1.15 AS builder
 
 WORKDIR $GOPATH/src/github.com/infrakeeper/bar-service
 COPY . .
